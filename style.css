@@ -24,6 +24,7 @@ a{
 .nav-bar{
     height: 3.5rem;
     background-color: rgb(27, 27, 54);
+    position: sticky;
 }
 
 .nav-bar ul{
@@ -41,6 +42,7 @@ a{
     background-color: rgb(43, 43, 91);
     color: black;
     padding: 0.5rem;
+    transition: all 0.4s;
 }
 
 .company-head{
@@ -91,12 +93,15 @@ a{
     width: 100%;
     margin-top: 3rem;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
 .card-container .image{
     object-fit: cover;
+    height: 400px;
+    overflow: hidden;
 }
 
 .card{
@@ -127,4 +132,88 @@ a{
 
 .xyz{
     color: #fff;
+}
+
+.contactus-form{
+    margin-top:50px;
+    height: 800px;
+    background-color: rgb(12, 12, 44);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactus-form h1{
+    font-weight: 500;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.contactus-form .desc{
+    width: 35rem;
+    padding-bottom: 2rem;
+    color: #675f5f;
+}
+
+.contactus-form form{
+    height: 400px;
+    width: 800px;
+    background: rgb(255,255,255,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgb(0,0,0,0.5);
+    border-radius: 15px;
+}
+
+.contactus-form .form{
+    margin-left: 5rem;
+}
+
+.contactus-form input,textarea{
+    height: 40px;
+    width: 290px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+}
+
+.contactus-form #email{
+    margin:0 5rem;
+    margin-top: 1rem;
+    width: 38.5rem;
+}
+
+.contactus-form #category,
+.contactus-form #city{
+    margin-left: 20px;
+}
+
+.contactus-form h4{
+    color: #675f5f;
+    margin:0 5rem;
+    margin-top: 2rem;
+}
+
+.contactus-form textarea{
+    margin:0 5rem;
+    margin-top: 1rem;
+    width: 38.5rem;
+}
+
+.contactus-form button{
+    position: relative;
+    margin-top: 3rem;
+    color: #fff;
+    width: 90px;
+    text-align: center;
+    padding: 0.3rem;
+    background-color: rgb(232, 100, 6);
+    border: none;
+    left: 38.7rem;
 }
