@@ -340,16 +340,34 @@ a{
 }
 
 .footermain{
+    background-color: rgb(27,27,54);
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+.lihead{
+    color: white;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
 .phonecon{
     display: flex;
     overflow: hidden;
+    padding-bottom: 1rem;
 }
 
 .location{
     display: flex;
+    padding-bottom: 1rem;
+}
+
+.footerend{
+    background-color:black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
