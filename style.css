@@ -238,40 +238,118 @@ a{
 }
 
 .maindiv{
-    margin: 5rem;
-    margin-top: 20rem;
+    margin:20rem 0rem;
     z-index: 1;
     position: relative;
     display:flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 5rem;
+    gap: 2rem;
+}
+
+.leftdiv img{
+    margin-left: 5rem;
+    height: 500px;
+    width:900px;
 }
 
 .rightdiv{
+    background-color: #c7e0e0;
+    margin-right: 5rem;
+    height: 470px;
+    width: 700px;
     border: 2px solid;
 }
 
 .rightdiv h2{
+    padding-top: 2.5rem;
     text-align: center;
 }
 
 .rightdiv .rddesc{
+    padding-top: 3rem;
     text-align: center;
 }
 
 .imgcontainer{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+.im{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .imgcontainer .im{
-    margin-top: 10rem;
+    margin-top: 2rem;
+}
+
+.imline{
+    border-left: 2px solid;
+    height: 30px;
+    
 }
 
 .imgcontainer img{
-    height: 250px;
-    width: 250px;
+    object-fit: cover;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
+}
+
+.text{
+    padding: 0.5rem 1rem;
+    border: 2px solid;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heading1{
+    font-size: 5rem;
+    color: rgb(155, 42, 42);
+}
+
+.gdesc{
+    font-size: 1.33rem;
+    margin: 3rem 10rem;
+    text-align: center;
+}
+
+.gallerycontainer{
+    overflow-y: hidden;
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(5,1fr);
+    height: 400px;
+    width: 100%;
+}
+
+.gallerycontainer img{
+    height: 450px;
+    object-fit: cover;
+}
+
+.footermain{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.phonecon{
+    display: flex;
+    overflow: hidden;
+}
+
+.location{
+    display: flex;
 }
